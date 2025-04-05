@@ -1,0 +1,108 @@
+:root{
+    --black: #1C232B;
+    --grey: #6C7289;
+    --cream:rgb(242, 234, 226); 
+    --white:#ffffff;
+    --green500: #3C8067;
+    --green700: #2C5047;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    
+}
+.container{
+    width: 600px;
+    height: 456px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.image-container{
+    width: 300px;
+    height: 456px;
+    border-radius: 10px;
+
+}
+img{
+    width: 300px;
+    height: 456px;
+    
+}
+.content-container{
+    margin-left: 10px;
+}
+.price{
+    color: var(--green700);
+    font-weight: 800;
+    font-size: 32px;
+
+
+}
+.price span{
+    color: var(--grey);
+    font-weight: 500;
+    text-decoration: line-through;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    font-family: 'Fraunces', serif;
+    
+}
+button{
+    background-color: var(--green500);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    padding: 16px 32px 16px 32px;
+    width: 236px;
+    height: 48px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+p{
+    color: var(--grey);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px)    {
+    .container{
+        width: 343px;
+        height: 611px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .image-container{
+        width: 343px;
+        height: 240px;
+        background-image: url("images/image-product-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 10px 10px 0 0;
+        margin-bottom: 24px;
+        margin-bottom: 24px;
+        
+    }
+   img{
+    display: none;
+   }
+   button{
+    margin-bottom: 16px;
+   }
+}
